@@ -1,7 +1,14 @@
 @mixin content-card {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: .4fr .6fr;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: $dblue;
+    border-radius: 15px;
     
 }
 @mixin color-card
 {
+    
     
 }
