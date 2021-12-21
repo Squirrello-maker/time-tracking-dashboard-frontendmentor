@@ -141,7 +141,17 @@ body
         {
             grid-area: 1/2/2/3;
             justify-self: end;
-            margin: 0.5em;
+            padding: 0.5em;
+            cursor: pointer;
+            .svg
+            {
+                transition: fill .3s;
+            }
+            &:hover .svg
+            {
+                fill: #fff;
+            }
+
         }
         &__hours-box
         {
