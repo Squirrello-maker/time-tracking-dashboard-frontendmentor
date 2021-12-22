@@ -7,7 +7,7 @@ class ActivityHandler
     }
     dailyActivity()
     {
-        fetch('http://localhost:3000/src/JSON/data.json')
+        fetch('https://raw.githubusercontent.com/Squirrello-maker/time-tracking-dashboard-frontendmentor/main/src/JSON/data.json')
         .then(res => res.json())
         .then(data =>{
             console.log(data[1]);
@@ -19,7 +19,7 @@ class ActivityHandler
     }
     weeklyActivity()
     {
-        fetch('http://localhost:3000/src/JSON/data.json')
+        fetch('https://raw.githubusercontent.com/Squirrello-maker/time-tracking-dashboard-frontendmentor/main/src/JSON/data.json')
         .then(res => res.json())
         .then(data =>{
             this.hours.forEach((element, index) => {
@@ -30,7 +30,7 @@ class ActivityHandler
     }
     monthlyActivity()
     {
-        fetch('http://localhost:3000/src/JSON/data.json')
+        fetch('https://raw.githubusercontent.com/Squirrello-maker/time-tracking-dashboard-frontendmentor/main/src/JSON/data.json')
         .then(res => res.json())
         .then(data =>{
             this.hours.forEach((element, index) => {
